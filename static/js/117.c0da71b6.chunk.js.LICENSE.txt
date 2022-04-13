@@ -1,0 +1,37 @@
+/*! ../../router */
+
+/*! ./hello.wasm */
+
+/*! ./home */
+
+/*! ./home.module.less */
+
+/*! @src/controller/reducer/globalSlice */
+
+/*! antd/es/button */
+
+/*! antd/es/button/style */
+
+/*! react */
+
+/*! react-redux */
+
+/*! react-router-dom */
+
+/*! react/jsx-runtime */
+
+/*!*********************************!*\
+  !*** ./src/views/home/home.tsx ***!
+  \*********************************/
+
+/*!*********************************!*\
+  !*** ./src/views/home/index.ts ***!
+  \*********************************/
+
+/*!***********************************!*\
+  !*** ./src/views/home/hello.wasm ***!
+  \***********************************/
+
+/*!*****************************************!*\
+  !*** ./src/views/home/home.module.less ***!
+  \*****************************************/

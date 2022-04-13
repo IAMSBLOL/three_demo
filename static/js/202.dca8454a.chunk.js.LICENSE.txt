@@ -1,0 +1,37 @@
+/*! ./Pass.js */
+
+/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js */
+
+/*! ./node_modules/@babel/runtime/helpers/esm/createClass.js */
+
+/*! ./node_modules/@babel/runtime/helpers/esm/createSuper.js */
+
+/*! ./node_modules/@babel/runtime/helpers/esm/inherits.js */
+
+/*! ./node_modules/console-browserify/index.js */
+
+/*! three */
+
+/*!**************************************************************!*\
+  !*** ./node_modules/three/build/three.module.js + 3 modules ***!
+  \**************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/three/examples/jsm/postprocessing/Pass.js ***!
+  \****************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/three/examples/jsm/postprocessing/RenderPass.js ***!
+  \**********************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/three/examples/jsm/loaders/FBXLoader.js + 3 modules ***!
+  \**************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/three/examples/jsm/postprocessing/GlitchPass.js + 1 modules ***!
+  \**********************************************************************************/
+
+/*!**************************************************************************************!*\
+  !*** ./node_modules/three/examples/jsm/postprocessing/EffectComposer.js + 3 modules ***!
+  \**************************************************************************************/
