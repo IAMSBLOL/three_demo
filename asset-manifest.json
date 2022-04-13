@@ -2,7 +2,7 @@
   "files": {
     "main.css": "/static/css/main.2546871c.css",
     "main.js": "/static/js/main.e7042ce8.js",
-    "runtime-main.js": "/static/js/runtime-main.503fa27d.js",
+    "runtime-main.js": "/static/js/runtime-main.155b76d6.js",
     "static/css/263.e102a8b4.chunk.css": "/static/css/263.e102a8b4.chunk.css",
     "static/js/263.6f141d6c.chunk.js": "/static/js/263.6f141d6c.chunk.js",
     "static/css/943.4e9a72ad.chunk.css": "/static/css/943.4e9a72ad.chunk.css",
@@ -24,7 +24,7 @@
     "static/media/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;": "/static/media/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;.1feff74f.bin"
   },
   "entrypoints": [
-    "static/js/runtime-main.503fa27d.js",
+    "static/js/runtime-main.155b76d6.js",
     "static/js/497.29bf7ddb.js",
     "static/css/main.2546871c.css",
     "static/js/main.e7042ce8.js"
