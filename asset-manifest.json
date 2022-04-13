@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/three_demo/build/static/css/main.2546871c.css",
-    "main.js": "/three_demo/build/static/js/main.e7042ce8.js",
+    "main.js": "/three_demo/build/static/js/main.c3b89f97.js",
     "runtime-main.js": "/three_demo/build/static/js/runtime-main.e5539bfd.js",
     "static/css/263.e102a8b4.chunk.css": "/three_demo/build/static/css/263.e102a8b4.chunk.css",
     "static/js/263.6f141d6c.chunk.js": "/three_demo/build/static/js/263.6f141d6c.chunk.js",
@@ -17,7 +17,7 @@
     "static/js/612.eb4d6e38.chunk.js": "/three_demo/build/static/js/612.eb4d6e38.chunk.js",
     "static/css/293.664a53f9.chunk.css": "/three_demo/build/static/css/293.664a53f9.chunk.css",
     "static/js/293.0a6fd514.chunk.js": "/three_demo/build/static/js/293.0a6fd514.chunk.js",
-    "static/js/497.6575c0f0.js": "/three_demo/build/static/js/497.6575c0f0.js",
+    "static/js/497.423cc96a.js": "/three_demo/build/static/js/497.423cc96a.js",
     "static/js/202.dca8454a.chunk.js": "/three_demo/build/static/js/202.dca8454a.chunk.js",
     "index.html": "/three_demo/build/index.html",
     "module.wasm": "/three_demo/build/8425aebd4465691bb4c8.module.wasm",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5539bfd.js",
-    "static/js/497.6575c0f0.js",
+    "static/js/497.423cc96a.js",
     "static/css/main.2546871c.css",
-    "static/js/main.e7042ce8.js"
+    "static/js/main.c3b89f97.js"
   ]
 }
