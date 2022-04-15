@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import { useRoutes, Navigate } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 import {
-  APP_HOME, APP_TEST, APP_HOME_ONE, APP_HOME_TWO
+  APP_HOME, APP_TEST, APP_HOME_ONE, APP_HOME_TWO, APP_PANORAMA, APP_SCAN
 } from './pathNames'
 
 function SuspenseFn (Comp) {
@@ -15,6 +15,8 @@ function SuspenseFn (Comp) {
 
 const App = React.lazy(() => import('@src/views/container/app'));
 const Test = React.lazy(() => import('@src/views/test'));
+const Panorama = React.lazy(() => import('@src/views/three/panorama'));
+const Scan = React.lazy(() => import('@src/views/three/scan'));
 const Home = React.lazy(() => import('@src/views/home'));
 const HomeN = React.lazy(() => import('@src/views/home/one'));
 const HomeT = React.lazy(() => import('@src/views/home/two'));
@@ -22,7 +24,7 @@ const HomeT = React.lazy(() => import('@src/views/home/two'));
 const routes = [
   {
     path: '/',
-    element: <Navigate to={APP_HOME} replace />
+    element: SuspenseFn(Scan)
   },
   {
     path: '/app',
@@ -33,6 +35,16 @@ const routes = [
       {
         path: APP_TEST,
         element: SuspenseFn(Test),
+
+      },
+      {
+        path: APP_SCAN,
+        element: SuspenseFn(Scan),
+
+      },
+      {
+        path: APP_PANORAMA,
+        element: SuspenseFn(Panorama),
 
       },
       {

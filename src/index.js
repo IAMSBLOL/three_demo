@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom';
 import Routes, { history } from './router'
 import './asset/style/appCustom.less'
+import '@arco-design/web-react/dist/css/arco.css';
 
 ReactDOM
   .createRoot(document.getElementById('root'))
