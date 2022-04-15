@@ -5,13 +5,14 @@ import {
   PerspectiveCamera,
   Scene,
   SphereGeometry,
-  MeshBasicMaterial,
+  ShaderMaterial,
   Mesh,
   TextureLoader,
-
+  Vector2
   //   MathUtils
 } from 'three'
 import WebGL from '@views/three/tool/webgl'
+import shaders from './glsl';
 import { OrbitControls } from '../tool/OrbitControls'
 import './scan.module.less'
 
@@ -25,7 +26,8 @@ const Scan = (): JSX.Element => {
   ))
   const scene = useRef<THREE.Scene>(new Scene())
   const canvasIns = useRef<HTMLCanvasElement | null>(null)
-
+  const time = useRef(0)
+  const mesh = useRef<any>(null)
   // const controls = useRef<any>(null)
 
   const addBox = async () => {
@@ -39,11 +41,22 @@ const Scan = (): JSX.Element => {
         reject(err)
       })
     })
+    const uniforms = {
+      image: { type: 't', value: texture },
+      resolution: { value: new Vector2(canvasIns.current?.width, canvasIns.current?.height) },
+      time: { type: 'f', value: time.current },
+      vtime: { type: 'f', value: time.current },
+    };
+    const material = new ShaderMaterial(
+      {
+        uniforms,
+        vertexShader: shaders.vertex.default,
+        fragmentShader: shaders.fragment.default
+      }
+    );
+    mesh.current = new Mesh(geometry, material);
 
-    const material = new MeshBasicMaterial({ color: '#fff', map: texture });
-    const sphere = new Mesh(geometry, material);
-
-    scene.current.add(sphere);
+    scene.current.add(mesh.current);
   }
 
   useEffect(() => {
@@ -71,6 +84,13 @@ const Scan = (): JSX.Element => {
           glRender.current?.render(scene.current, camera.current)
         }
         const rendera = () => {
+          if (mesh.current) {
+            const { uniforms } = (mesh.current.material as THREE.ShaderMaterial);
+            time.current = performance.now();
+            uniforms.time.value = Math.abs(time.current);
+            uniforms.vtime.value = Math.abs(time.current);
+            // console.log(uniforms)
+          }
           renderCvs()
           controls.update();
           requestAnimationFrame(rendera)
