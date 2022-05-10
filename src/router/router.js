@@ -24,7 +24,7 @@ const HomeT = React.lazy(() => import('@src/views/home/two'));
 const routes = [
   {
     path: '/',
-    element: SuspenseFn(Scan)
+    element: SuspenseFn(Panorama)
   },
   {
     path: '/app',
