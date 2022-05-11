@@ -5,6 +5,7 @@ export const setCamera = (camera:THREE.PerspectiveCamera) => {
   camera.lookAt(0, 0, 0)
   //   camera.position = new Vector3(0, 0, 0);
   camera.translateZ(200)
+
   //   camera.translateY(10)
   //   camera.translateX(10)
 }
